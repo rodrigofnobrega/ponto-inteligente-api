@@ -26,6 +26,7 @@ import com.br.rodrigofnobrega.pontointeligente.api.enums.PerfilEnum;
 
 @Entity
 @Table(name = "funcionario")
+
 public class Funcionario implements Serializable {	
 
 	private static final long serialVersionUID = -5754246207015712518L;
