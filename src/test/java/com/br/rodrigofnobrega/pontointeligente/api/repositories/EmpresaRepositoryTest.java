@@ -26,21 +26,20 @@ public class EmpresaRepositoryTest {
 		Empresa empresa = new Empresa();
 		empresa.setRazaoSocial("Empresa de exemplo");
 		empresa.setCnpj(CNPJ);
-		empresaRepository.save(empresa);
-	}
-
-	@After
-	public final void tearDown() { 
-		empresaRepository.deleteAll();
+		this.empresaRepository.save(empresa);
 	}
 	
+	@After
+    public final void tearDown() { 
+		this.empresaRepository.deleteAll();
+	}
+
 	@Test
 	public void testBuscarPorCnpj() {
-		Empresa empresa = empresaRepository.findByCnpj(CNPJ);
+		Empresa empresa = this.empresaRepository.findByCnpj(CNPJ);
 		
 		assertEquals(CNPJ, empresa.getCnpj());
 	}
-	
 
 
 }
