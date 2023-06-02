@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.Optional;
 
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.BDDMockito;
@@ -34,7 +34,7 @@ public class LancamentoServiceTest {
 	@Autowired
 	private LancamentoService lancamentoService;
 
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 		BDDMockito
 				.given(this.lancamentoRepository.findByFuncionarioId(Mockito.anyLong(), Mockito.any(PageRequest.class)))

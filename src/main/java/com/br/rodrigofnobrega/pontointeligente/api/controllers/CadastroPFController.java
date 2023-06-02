@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import java.security.NoSuchAlgorithmException;
 import java.util.Optional;
 
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

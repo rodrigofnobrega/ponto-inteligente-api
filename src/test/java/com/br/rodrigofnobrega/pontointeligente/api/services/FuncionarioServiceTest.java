@@ -5,8 +5,8 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.Optional;
 
-import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.runner.RunWith;
 import org.mockito.BDDMockito;
 import org.mockito.Mockito;
@@ -30,7 +30,7 @@ public class FuncionarioServiceTest {
 	@Autowired
 	private FuncionarioService funcionarioService;
 
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 		BDDMockito.given(this.funcionarioRepository.save(Mockito.any(Funcionario.class))).willReturn(new Funcionario());
 		BDDMockito.given(this.funcionarioRepository.findById(Mockito.anyLong())).willReturn(Optional.of(new  Funcionario()));

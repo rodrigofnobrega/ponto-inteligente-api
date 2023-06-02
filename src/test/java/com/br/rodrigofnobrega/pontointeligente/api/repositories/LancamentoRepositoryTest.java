@@ -6,8 +6,8 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Date;
 import java.util.List;
 
+import org.junit.After;
 import org.junit.Test;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -46,7 +46,7 @@ public class LancamentoRepositoryTest {
 		this.lancamentoRepository.save(obterDadosLancamentos(funcionario));
 	}
 
-	@AfterEach
+	@After
 	public void tearDown() throws Exception {
 		this.empresaRepository.deleteAll();
 	}

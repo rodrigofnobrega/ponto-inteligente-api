@@ -3,13 +3,12 @@ package com.br.rodrigofnobrega.pontointeligente.api.dtos;
 
 import java.util.Optional;
 
-import org.hibernate.validator.constraints.Email;
+import javax.validation.constraints.Email;
 import org.hibernate.validator.constraints.Length;
-import org.hibernate.validator.constraints.NotEmpty;
+import javax.validation.constraints.NotEmpty;
 import org.hibernate.validator.constraints.br.CNPJ;
 import org.hibernate.validator.constraints.br.CPF;
 
-@SuppressWarnings("deprecation")
 public class CadastroPFDto {
 	
 	private Long id;

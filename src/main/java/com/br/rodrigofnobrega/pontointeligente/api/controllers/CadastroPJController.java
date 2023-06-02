@@ -25,7 +25,7 @@ import com.br.rodrigofnobrega.pontointeligente.api.services.EmpresaService;
 import com.br.rodrigofnobrega.pontointeligente.api.services.FuncionarioService;
 import com.br.rodrigofnobrega.pontointeligente.api.utils.PasswordUtils;
 
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api/cadastrar-pj")
